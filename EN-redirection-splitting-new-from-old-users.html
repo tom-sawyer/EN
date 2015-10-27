@@ -1,0 +1,66 @@
+<!-- EN HEADER CODE STARTS -->
+
+<html>
+<head>
+<meta http-equiv="refresh" content="2; url=https://join.greenpeace.ru/recycle/index.phtml?utm_source=dp&utm_medium=recycle&iAppealID=2145" />
+<style>form { visibility: hidden; } body { background-color: #000; }</style>
+</head>
+<body>
+
+<!-- EN HEADER CODE ENDS -->
+
+<!-- EN FOOTER CODE STARTS -->
+
+<script>
+function getParams(url)
+{
+	if (url.indexOf('?') < 0) return {};
+	var params = (url.split('?')[1]).split('&');
+	var result = {};
+	
+	for (var i = 0; i < params.length; i++)
+	{
+		var t = params[i].split('=');
+		result[t[0]] = t[1] || undefined;
+	}
+	
+	return result;
+}
+
+function redirectWithData(where, datas, urlParams)
+{
+	var vars = [];
+	var form = document.createElement('form');
+	form.action = where;
+	form.method = 'get';
+	for (var id in datas)
+	{
+		var val = $('#' + id).clone().attr('name', datas[id]).appendTo(form);
+	}
+	var params = getParams(document.referrer);
+	for (var i = 0; i < urlParams.length; i++)
+	{
+		if (params[urlParams[i]] !== undefined)
+			$(document.createElement('input')).attr('type', 'hidden').attr('name', urlParams[i]).val(params[urlParams[i]]).appendTo(form);
+	}
+
+	params = getParams(where);
+	for (var key in params)
+	{
+		$(document.createElement('input')).attr('type', 'hidden').attr('name', key).val(params[key]).appendTo(form);
+	}
+
+	$(form).appendTo($(document.body));
+	form.submit();
+}
+
+var url = 'https://join.greenpeace.ru/recycle/index.phtml?utm_source=dp&utm_medium=recycle&iAppealID=2145';
+if ($('#new_supporter').val() == 1)
+    url = 'https://join.greenpeace.ru/recycle/new.phtml?utm_source=dp&utm_medium=recycle&iAppealID=2147';
+
+redirectWithData(url, {email: 'e', first_name: 'f', last_name: 'l', phone_number: 'p'}, ['ea.tracking.id']);
+</script>
+</body>
+</html>
+
+<!-- EN FOOTER CODE ENDS -->
