@@ -1,0 +1,48 @@
+<div class="counter_wrapper">
+  <div class="counter">
+		<span class="count"><span class="count_num">0</span></span>
+		<span class="count_target">Нужно: <strong>30 000</strong></span>
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+var EA_TOKEN="e501f769-6cfe-4ba4-acc2-862a5bf4739d";
+var EA_CAMPAIGN_ID=[44103];
+var total_count=0;
+var target_count=30000;
+    $(document).ready(function(){
+        function get_count(campaign_id){
+            return get_count_call=$.ajax({
+                                url:"https://e-activist.com/ea-dataservice/data.service?service=EaDataCapture&token="+EA_TOKEN+"&campaignId="+campaign_id+"&contentType=json&resultType=summary",
+                                crossDomain:true,
+                                dataType:"jsonp"
+                            });
+        }
+        $.when(get_count(EA_CAMPAIGN_ID[0])).done(function(resp1){
+            total_count=parseInt(resp1["rows"][0]["columns"][5].value);
+            get_count_callback();
+        });
+        function get_count_callback(){
+            var target_width=total_count*100/target_count;
+            var tr_time=3000;
+            $(".count").css({"width":0});
+            setTimeout(function(){
+                $(".count").css({"width":target_width+"%","transition":"width "+tr_time/1000+"s ease-out"});
+                var tr_count=0;
+                var tr_steps=100;
+                var tr_interval=tr_time/tr_steps;
+                var anime_counter=setInterval(function(){
+                    tr_count=parseInt(tr_count+total_count/tr_steps);
+                    if(tr_count<total_count){
+                        $(".count_num").html("<strong>"+tr_count+"<\/strong> Отправлено");
+                    }else{
+                        $(".count_num").html("<strong>"+total_count+"<\/strong> Отправлено");
+                        clearInterval(anime_counter);
+                    }
+                },tr_interval);
+            },100)
+        }
+    })
+</script>
