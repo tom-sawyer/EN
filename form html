@@ -1,0 +1,149 @@
+<script type='text/javascript' src='https://www.google.com/jsapi'></script>
+<script type='text/javascript'>google.load('jquery', '1.7.1');</script>
+<script type='text/javascript' >var CONTEXT_ROOT = '/ea-action';</script>
+<script type='text/javascript' src='/ea-action/js/eaCommon.js'></script>
+<script type='text/javascript' src='/ea-action/js/eaAJAX.js'></script>
+<script type='text/javascript' src='/ea-action/js/eacampaign.js'></script>
+
+<script type='text/javascript' src='/ea-action/js/typeahead.js'></script>
+
+
+<form method='POST' name='Cyber action standard (+phone) copy_1' id='ea9929id' class='eaform ea9929class' action='/ea-action/action' onsubmit='return validateEAform(this, false, false, false )'>
+<input type='hidden' name='ea_requested_action' value='ea_submit_user_form' />
+<input type='hidden' name='ea_javascript_enabled' id='ea_javascript_enabled' value='false' />
+<input type='hidden' name='ea.AJAX.submit' value='false' />
+<input type='hidden' name='ea.client.id' value='1863' />
+<input type='hidden' name='ea.campaign.id' value='44103' />
+<input type='hidden' name='ea.form.id' value='9929' />
+<input type='hidden' name='ea.submitted.page' value='1' />
+<input type='hidden' name='sessionId' value='96e1c11a-6e85-4e3b-ac41-4fa729ee0ee3' />
+<div id='eaerrors' class='eaErrorMessage'>
+</div>
+
+<div id='first_nameDiv' class='eaFullWidthContent'>
+<span class='eaFormElementLabel'><label for='first_name'><a name='first_name' style='text-decoration:none; color: inherit;'>Имя*</a><span class='eaMandatoryFieldMarker'> *</span></label></span>
+<div id='first_nameField' class='eaFormField'>
+   <input id='first_name' type='text' class='eaFormTextfield' name='first_name' value='' onblur='validatefield(this, true, false, false);' />
+</div>
+
+</div>
+<div id='last_nameDiv' class='eaFullWidthContent'>
+<span class='eaFormElementLabel'><label for='last_name'><a name='last_name' style='text-decoration:none; color: inherit;'>Фамилия*</a><span class='eaMandatoryFieldMarker'> *</span></label></span>
+<div id='last_nameField' class='eaFormField'>
+   <input id='last_name' type='text' class='eaFormTextfield' name='last_name' value='' onblur='validatefield(this, true, false, false);' />
+</div>
+
+</div>
+<div id='emailDiv' class='eaFullWidthContent'>
+<span class='eaFormElementLabel'><label for='email'><a name='email' style='text-decoration:none; color: inherit;'>Email*</a><span class='eaMandatoryFieldMarker'> *</span></label></span>
+<div id='emailField' class='eaFormField'>
+   <input id='email' type='text' class='eaFormTextfield' name='email' value='' onblur='validatefield(this, true, false, false);' />
+</div>
+
+</div>
+<div id='regionDiv' class='eaFullWidthContent'>
+<span class='eaFormElementLabel'><label for='region'><a name='region' style='text-decoration:none; color: inherit;'>Регион*</a><span class='eaMandatoryFieldMarker'> *</span></label></span>
+<div id='regionField' class='eaFormField'>
+   <select id='region' class='eaFormSelect' name='region' onblur='validatefield(this, true, false, false);' />      <option value=''>Регион*</option>
+      <option value='77'>Москва</option>
+      <option value='78'>Санкт-Петербург</option>
+      <option value='1'>Адыгея</option>
+      <option value='4'>Алтай</option>
+      <option value='22'>Алтайский край</option>
+      <option value='28'>Амурская область</option>
+      <option value='29'>Архангельская область</option>
+      <option value='30'>Астраханская область</option>
+      <option value='2'>Башкортостан</option>
+      <option value='31'>Белгородская область</option>
+      <option value='32'>Брянская область</option>
+      <option value='3'>Бурятия</option>
+      <option value='33'>Владимирская область</option>
+      <option value='34'>Волгоградская область</option>
+      <option value='35'>Вологодская область</option>
+      <option value='36'>Воронежская область</option>
+      <option value='5'>Дагестан</option>
+      <option value='79'>Еврейская автономная область</option>
+      <option value='75'>Забайкальский край</option>
+      <option value='37'>Ивановская область</option>
+      <option value='6'>Ингушетия</option>
+      <option value='38'>Иркутская область</option>
+      <option value='7'>Кабардино-Балкарская республика</option>
+      <option value='39'>Калининградская область</option>
+      <option value='8'>Калмыкия</option>
+      <option value='40'>Калужская область</option>
+      <option value='41'>Камчатский край</option>
+      <option value='9'>Карачаево-Черкесская республика</option>
+      <option value='10'>Карелия</option>
+      <option value='42'>Кемеровская область</option>
+      <option value='43'>Кировская область</option>
+      <option value='11'>Коми</option>
+      <option value='44'>Костромская область</option>
+      <option value='23'>Краснодарский край</option>
+      <option value='24'>Красноярский край</option>
+      <option value='45'>Курганская область</option>
+      <option value='46'>Курская область</option>
+      <option value='47'>Ленинградская область</option>
+      <option value='48'>Липецкая область</option>
+      <option value='49'>Магаданская область</option>
+      <option value='12'>Марий Эл</option>
+      <option value='13'>Мордовия</option>
+      <option value='50'>Московская область</option>
+      <option value='51'>Мурманская область</option>
+      <option value='83'>Ненецкий автономный округ</option>
+      <option value='52'>Нижегородская область</option>
+      <option value='53'>Новгородская область</option>
+      <option value='54'>Новосибирская область</option>
+      <option value='55'>Омская область</option>
+      <option value='56'>Оренбургская область</option>
+      <option value='57'>Орловская область</option>
+      <option value='58'>Пензенская область</option>
+      <option value='59'>Пермский край</option>
+      <option value='25'>Приморский край</option>
+      <option value='60'>Псковская область</option>
+      <option value='61'>Ростовская область</option>
+      <option value='62'>Рязанская область</option>
+      <option value='63'>Самарская область</option>
+      <option value='64'>Саратовская область</option>
+      <option value='14'>Саха (Якутия)</option>
+      <option value='65'>Сахалинская область</option>
+      <option value='66'>Свердловская область</option>
+      <option value='15'>Северная Осетия - Алания</option>
+      <option value='67'>Смоленская область</option>
+      <option value='26'>Ставропольский край</option>
+      <option value='68'>Тамбовская область</option>
+      <option value='16'>Татарстан</option>
+      <option value='69'>Тверская область</option>
+      <option value='70'>Томская область</option>
+      <option value='71'>Тульская область</option>
+      <option value='17'>Тыва</option>
+      <option value='72'>Тюменская область</option>
+      <option value='18'>Удмуртская республика</option>
+      <option value='73'>Ульяновская область</option>
+      <option value='27'>Хабаровский край</option>
+      <option value='19'>Хакасия</option>
+      <option value='86'>Ханты-Мансийский АО - Югра</option>
+      <option value='74'>Челябинская область</option>
+      <option value='20'>Чеченская республика</option>
+      <option value='21'>Чувашская республика</option>
+      <option value='87'>Чукотский автономный округ</option>
+      <option value='89'>Ямало-Ненецкий АО</option>
+      <option value='76'>Ярославская область</option>
+      <option value='0'>Нет в списке</option>
+      <option value=''></option>
+   </select>
+</div>
+
+</div>
+<div id='phone_numberDiv' class='eaFullWidthContent'>
+<span class='eaFormElementLabel'><label for='phone_number'><a name='phone_number' style='text-decoration:none; color: inherit;'>Телефон</a></label></span>
+<div id='phone_numberField' class='eaFormField'>
+   <input id='phone_number' type='text' class='eaFormTextfield' name='phone_number' value='' onblur='validatefield(this, true, false, false);' />
+</div>
+
+</div>
+<div id='email_okDiv' class='eaFullWidthContent'><div class="eaQuestionLabel"></div><div class="eaQuestionCheckboxFormFieldContainer">
+<span class='eaQuestionCheckbox'><input id='email_okY' type='checkbox' name='email_ok' value='Y' checked  onblur='validatefield(this, false, false, false);' /><label for="email_okY"> <span class="emailcheck">Держите меня в курсе!<br/><span class="comment" >В любой момент вы сможете отписаться от наших писем.<br/><br/></span></span></label></span>&nbsp;&nbsp;&nbsp;</div>
+</div>
+<div id='Privacy_policyDiv' class='eaFullWidthContent'><div class="policy">Я предоставляю Гринпис России свои персональные данные и подтверждаю свое <a href="http://www.greenpeace.org/russia/ru/help/privacy/" target="_blank" style="text-decoration: underline;">согласие</a> на их обработку.</div>
+</div><span class="eaSubmitResetButtonGroup" id="eaFormButtonGroup_1"><input type="submit" class="eaSubmitButton" value="Отправить"></input></span>
+</form>
